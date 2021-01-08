@@ -1,8 +1,29 @@
-button {
-    height: 50px;
-    width: 75px;
-    color: blue;
-    border: crimson;
-    border-style: dashed;
-    background: transparent;
+/* external stylesheet > user > browser > internal > inline */
+/* reset, normalize */
+
+.col {
+    float: left;
+    margin-left: 5%;
 }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6 {
+    
+    width: 50%
+
+}
+
+/* PSUEDO ELEMENT SELECTOR */
+.row::after {
+    clear: both;
+    content: '';
+    display: block;
+
+}
+
+.col-3 {
+
+    width: 16.6667%
+
+}
+
+
